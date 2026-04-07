@@ -1,0 +1,69 @@
+{
+  "name": "brain-alert-ops",
+  "version": "1.0.0",
+  "description": "AI brain pack for building event-driven operational alerting systems. Transforms passive notification pipelines into real-time, structured, routable, and actionable alert systems — covering event schema design, severity classification, AI voice escalation (Azure ACS/Vapi/Synthflow), adaptive card actions, ITSM auto-creation, state tracking, on-call rotation, and operational runbooks.",
+  "author": {
+    "name": "AgentBrains",
+    "email": "partnerships@radiuslead.com",
+    "github": "radiuslead"
+  },
+  "repository": "https://github.com/radiuslead/brain-alert-ops",
+  "category": "vertical",
+  "keywords": [
+    "alerting", "NOC", "operations", "Power Automate", "Teams",
+    "Vapi", "Azure Communication Services", "on-call", "ITSM",
+    "ServiceNow", "incident management", "RF Hawkeye", "SCADA",
+    "event-driven", "adaptive cards", "voice escalation"
+  ],
+  "install": "/plugin marketplace add radiuslead/brain-alert-ops",
+  "skills": [
+    {
+      "name": "alert-event-schema-designer",
+      "path": "skills/alert-event-schema-designer",
+      "version": "1.0.0",
+      "description": "Design structured JSON event schemas for operational alerts. Transforms unstructured email/text alerts into routable events with severity, site, metric, status, and lifecycle fields. Includes Power Automate email-to-schema parser and domain extensions for RF/telecom, SCADA, and IT infrastructure."
+    },
+    {
+      "name": "severity-classifier-builder",
+      "path": "skills/severity-classifier-builder",
+      "version": "1.0.0",
+      "description": "Build severity classification logic — keyword matching, threshold-based rules, AI-assisted classification via Claude API, and multi-factor scoring with site criticality and time-of-day modifiers. Includes classification rule documentation template."
+    },
+    {
+      "name": "ai-voice-escalator",
+      "path": "skills/ai-voice-escalator",
+      "version": "1.0.0",
+      "description": "Build AI voice call escalation for CRITICAL alerts. Three implementation paths: Azure Communication Services (enterprise native), Vapi (developer, fastest), Synthflow (no-code). Includes full Power Automate integration, escalation chain logic, and enterprise procurement guidance."
+    },
+    {
+      "name": "adaptive-card-actioner",
+      "path": "skills/adaptive-card-actioner",
+      "version": "1.0.0",
+      "description": "Build actionable Teams adaptive cards — acknowledge, escalate, create ticket directly from Teams. Full card JSON, card update on acknowledgment, Power Automate response handler, severity-based card styling."
+    },
+    {
+      "name": "incident-auto-creator",
+      "path": "skills/incident-auto-creator",
+      "version": "1.0.0",
+      "description": "Auto-create ITSM incidents from CRITICAL alerts — ServiceNow and Jira via REST API (no premium connector). Bidirectional status sync, incident templates by alert type, deduplication to prevent duplicate tickets."
+    },
+    {
+      "name": "acknowledgment-state-tracker",
+      "path": "skills/acknowledgment-state-tracker",
+      "version": "1.0.0",
+      "description": "Track alert lifecycle state — OPEN/ACKNOWLEDGED/ESCALATED/RESOLVED. Three storage options: SharePoint (free), Dataverse, Azure Table Storage. Deduplication, flapping suppression, SLA measurement and reporting."
+    },
+    {
+      "name": "on-call-rotation-manager",
+      "path": "skills/on-call-rotation-manager",
+      "version": "1.0.0",
+      "description": "Manage on-call schedules and route alerts to the right engineer. SharePoint schedule list, Power Automate lookup by team/specialty/time, business hours vs after-hours logic, escalation contact resolution by level."
+    },
+    {
+      "name": "ops-runbook-writer",
+      "path": "skills/ops-runbook-writer",
+      "version": "1.0.0",
+      "description": "Generate operational runbooks for alert response, system architecture documentation, and handover packages. Templates for signal degradation, connectivity loss, equipment failure, escalation paths, and system failure modes."
+    }
+  ]
+}
