@@ -2,10 +2,11 @@
 
 **Stop broadcasting alerts. Start operating on them.**
 
-8 skills for NOC engineers, infrastructure ops managers, and IT architects
+9 skills for NOC engineers, infrastructure ops managers, and IT architects
 who need to transform passive notification pipelines into real-time,
 event-driven operational systems — with AI voice escalation, actionable
-Teams cards, automatic incident creation, and full state tracking.
+Teams cards, automatic incident creation, full state tracking, and
+self-service on-call engineer onboarding.
 
 ---
 
@@ -64,18 +65,37 @@ State Tracking (acknowledged, escalated, resolved — with SLA measurement)
 | `acknowledgment-state-tracker` | Track full alert lifecycle — SharePoint/Dataverse/Azure Table Storage, SLA measurement, flapping suppression |
 | `on-call-rotation-manager` | Route to the right engineer — schedule lookup, specialty routing, business hours logic, escalation levels |
 | `ops-runbook-writer` | Generate response runbooks, architecture docs, and handover packages for NOC/ops teams |
+| `oncall-engineer-onboarding` | Self-service on-call registration — Microsoft Shifts setup, Forms-based registration, phone number storage, test call feature, offboarding |
+
+---
+
+## The Ninth Skill: On-Call Engineer Onboarding
+
+The most common alerting failure isn't the technology. It's calling a phone
+number that's wrong, outdated, or belongs to someone who left six months ago.
+
+`oncall-engineer-onboarding` solves the human layer:
+
+- **Microsoft Teams Shifts** — engineers self-manage their rotation, Power Automate queries Graph API for who's on call right now
+- **Self-registration form** — Microsoft Forms → Power Automate → SharePoint, with overlap validation so two engineers don't both think they're covered
+- **Phone number storage** — Entra ID mobile field vs SharePoint lookup, with PowerShell to populate at scale
+- **Test call feature** — engineer posts "TEST CALL" in Teams, system calls them to confirm setup works before their week starts
+- **Deregistration** — automated offboarding when rotations end or engineers leave
 
 ---
 
 ## The Voice Escalation Advantage
 
-The `ai-voice-escalator` skill covers what your team might not be able to get approved — and offers alternatives for every enterprise procurement reality:
+The `ai-voice-escalator` skill covers what your team might not be able to get
+approved — and offers alternatives for every enterprise procurement reality:
 
 **Azure ACS** — native Microsoft, enterprise-grade, requires Azure approval
-**Vapi** — third-party SaaS, working in days, AI voice agent that can take spoken acknowledgment
+**Vapi** — third-party SaaS, working in days, AI voice agent that takes spoken acknowledgment
 **Synthflow** — no-code, no developer needed, working same day
 
-The skill also covers the enterprise reality: often the right solution isn't the approved solution. It gives you the pragmatic path for today and the migration path for when you get proper approval.
+The skill acknowledges the enterprise reality: the right solution and the
+approved solution are often different things. It gives you the pragmatic path
+for today and the migration path for when approval comes through.
 
 ---
 
@@ -105,7 +125,7 @@ organizations where the ideal isn't yet approved.
 
 | Option | Price | What you get |
 |--------|-------|-------------|
-| Brain pack (self-install) | $497 one-time | All 8 skills, GitHub access |
+| Brain pack (self-install) | $497 one-time | All 9 skills, GitHub access |
 | DFY Implementation | $5,000–$8,000 | Full event-driven alerting system built end-to-end |
 | Subscription | $99/month | Hosted + updated as platforms evolve |
 

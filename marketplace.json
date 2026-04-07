@@ -1,7 +1,7 @@
 {
   "name": "brain-alert-ops",
-  "version": "1.0.0",
-  "description": "AI brain pack for building event-driven operational alerting systems. Transforms passive notification pipelines into real-time, structured, routable, and actionable alert systems — covering event schema design, severity classification, AI voice escalation (Azure ACS/Vapi/Synthflow), adaptive card actions, ITSM auto-creation, state tracking, on-call rotation, and operational runbooks.",
+  "version": "1.1.0",
+  "description": "AI brain pack for building event-driven operational alerting systems. Transforms passive notification pipelines into real-time, structured, routable, and actionable alert systems — covering event schema design, severity classification, AI voice escalation (Azure ACS/Vapi/Synthflow), adaptive card actions, ITSM auto-creation, state tracking, on-call rotation, engineer onboarding, and operational runbooks.",
   "author": {
     "name": "AgentBrains",
     "email": "partnerships@radiuslead.com",
@@ -13,7 +13,7 @@
     "alerting", "NOC", "operations", "Power Automate", "Teams",
     "Vapi", "Azure Communication Services", "on-call", "ITSM",
     "ServiceNow", "incident management", "RF Hawkeye", "SCADA",
-    "event-driven", "adaptive cards", "voice escalation"
+    "event-driven", "adaptive cards", "voice escalation", "Microsoft Shifts"
   ],
   "install": "/plugin marketplace add radiuslead/brain-alert-ops",
   "skills": [
@@ -64,6 +64,12 @@
       "path": "skills/ops-runbook-writer",
       "version": "1.0.0",
       "description": "Generate operational runbooks for alert response, system architecture documentation, and handover packages. Templates for signal degradation, connectivity loss, equipment failure, escalation paths, and system failure modes."
+    },
+    {
+      "name": "oncall-engineer-onboarding",
+      "path": "skills/oncall-engineer-onboarding",
+      "version": "1.0.0",
+      "description": "Set up the mechanism for on-call engineers to register themselves into the alerting system. Covers Microsoft Teams Shifts setup with Graph API query, self-registration via Microsoft Forms with overlap validation, phone number storage options (Entra profile vs SharePoint), test call feature, and engineer offboarding procedures."
     }
   ]
 }
